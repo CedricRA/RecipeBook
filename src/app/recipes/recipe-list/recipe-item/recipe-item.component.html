@@ -1,1 +1,8 @@
-<p>recipe-item works!</p>
+<a class="list-group-item recipe-item">
+    <div class="row">
+        <h4 class="recipe-name">{{ recipe.name }}</h4>
+        <div class="flaot-right">
+            <img [src]="recipe.imagePath" [alt]="recipe.name" class="img-recipe">
+        </div>
+    </div>
+</a>
