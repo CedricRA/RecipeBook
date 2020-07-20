@@ -9,14 +9,12 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-xs-12">
-        <div class="button-group">
-            <button class="btn btn-primary dropdown-toogle">Manage Recipe <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-                <li><a href="#">To shopping list</a></li>
-                <li><a href="#">Edit</a></li>
-                <li><a href="#">Delete</a></li>
-            </ul>
+    <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-primary" id="dropdownRecipe" ngbDropdownToggle>Recipe</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownRecipe">
+            <button ngbDropdownItem>To shopping list</button>
+            <button ngbDropdownItem (click)="onEdit()">Edit recipe</button>
+            <button ngbDropdownItem>Delete recipe</button>
         </div>
     </div>
 </div>
