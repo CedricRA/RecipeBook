@@ -17,7 +17,7 @@
     <div ngbDropdown class="d-inline-block">
         <button class="btn btn-primary" id="dropdownRecipe" ngbDropdownToggle>Recette</button>
         <div ngbDropdownMenu aria-labelledby="dropdownRecipe">
-            <button ngbDropdownItem>Ajouter à la liste d'achats</button>
+            <button ngbDropdownItem (click)="onAddToShoppingList()">Ajouter à la liste d'achats</button>
             <button ngbDropdownItem (click)="onEdit()">Modifier recette</button>
             <button ngbDropdownItem>Supprimer recette</button>
         </div>
