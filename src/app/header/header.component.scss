@@ -1,0 +1,13 @@
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .active>.nav-link
+ { 
+    color: green;
+    font-weight: lighter;
+}
+
+.navbar-light .navbar-nav .active>.nav-link
+ { 
+    font-style: italic;
+    border-bottom: green 1px solid;
+    font-weight: 500;
+ }

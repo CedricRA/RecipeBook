@@ -1,15 +1,17 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
   title = 'RecipeBook';
-  selectedMenu = 'recipes';
+  constructor(private elementRef: ElementRef) {
 
-  onMenuSelected(menu: string){
-    this.selectedMenu = menu;
   }
+  ngAfterViewInit() {
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#C8E6CF';
+  }
+
 }
